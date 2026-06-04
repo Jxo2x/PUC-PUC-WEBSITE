@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - PUC PUC Flavors</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #f1f5f9; min-height: 100vh; display: flex; flex-direction: column; background-color: #0f172a;
+            background-image: url('Screenshot 2026-06-03 174352.png'); background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat;
+        }
+        header {
+            width: 100%; background-color: rgba(30, 41, 59, 0.75); backdrop-filter: blur(12px); padding: 15px 50px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255, 255, 255, 0.1); position: sticky; top: 0; z-index: 10;
+        }
+        .logo { font-size: 1.5rem; font-weight: 800; color: #ffffff; letter-spacing: 1px; }
+        nav a { color: #cbd5e1; text-decoration: none; font-weight: 600; margin-left: 20px; font-size: 0.95rem; transition: color 0.2s; }
+        nav a:hover { color: #38bdf8; }
+        .container { max-width: 850px; margin: 60px auto; padding: 0 40px; width: 100%; z-index: 2; }
+        .card { background-color: rgba(30, 41, 59, 0.65); backdrop-filter: blur(12px); border-radius: 16px; padding: 40px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.1); }
+        h1 { font-size: 2.5rem; color: #ffffff; margin-bottom: 15px; font-weight: 800; border-bottom: 2px solid rgba(255, 255, 255, 0.1); padding-bottom: 10px; }
+        .sorten-titel { font-size: 1.6rem; color: #ffffff; margin-bottom: 20px; font-weight: 700; }
+        .sorten-liste { display: flex; flex-direction: column; gap: 25px; }
+        .sorte-item { background-color: rgba(15, 23, 42, 0.4); border-radius: 10px; padding: 20px; border-left: 5px solid transparent; }
+        
+        /* Rahmenfarben für die Sorten */
+        .sorte-jagoda { border-left-color: #f87171; } /* Rot */
+        .sorte-sumsko { border-left-color: #a78bfa; } /* Lila */
+        .sorte-banana { border-left-color: #fef08a; } /* Gelb für Banane */
+        
+        .sorte-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+        .sorte-name { font-size: 1.3rem; font-weight: 700; color: #ffffff; }
+        .sorte-tag { font-size: 0.85rem; font-weight: 600; padding: 3px 8px; border-radius: 20px; text-transform: uppercase; }
+        
+        /* Tag-Farben */
+        .tag-jagoda { background-color: rgba(248, 113, 113, 0.2); color: #f87171; }
+        .tag-sumsko { background-color: rgba(167, 139, 250, 0.2); color: #a78bfa; }
+        .tag-banana { background-color: rgba(254, 240, 138, 0.2); color: #fef08a; } /* Gelber Tag */
+        
+        .sorte-beschreibung { font-size: 1.1rem; line-height: 1.6; color: #e2e8f0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">PUC PUC INFO</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h1>About PUC PUC Flavors</h1>
+            <div class="sorten-titel">Explore the Flavors:</div>
+            <div class="sorten-liste">
+                
+                <div class="sorte-item sorte-jagoda">
+                    <div class="sorte-header">
+                        <span class="sorte-name">🍓 Jagoda</span>
+                        <span class="sorte-tag tag-jagoda">Strawberry</span>
+                    </div>
+                    <p class="sorte-beschreibung">The absolute classic! This variety brings the sweet, rich flavor of freshly picked strawberries. It is a fan-favorite, especially among kids, combining a smooth fruity sweetness with an intense, long-lasting popping sensation on the tongue.</p>
+                </div>
+
+                <div class="sorte-item sorte-sumsko">
+                    <div class="sorte-header">
+                        <span class="sorte-name">🫐 Šumsko Voće</span>
+                        <span class="sorte-tag tag-sumsko">Forest Fruits</span>
+                    </div>
+                    <p class="sorte-beschreibung">A wild and refreshing blend of raspberries, blackberries, and blueberries. This flavor offers a slightly tart and deeply rich berry experience. Perfect for those who love a sophisticated, multi-layered fruit punch mixed with explosive fizzing fun.</p>
+                </div>
+
+                <div class="sorte-item sorte-banana">
+                    <div class="sorte-header">
+                        <span class="sorte-name">🍌 Banana</span>
+                        <span class="sorte-tag tag-banana">Sweet Banana</span>
+                    </div>
+                    <p class="sorte-beschreibung">A delightfully unique flavor in the popping candy lineup! The banana variety delivers a smooth, distinctively creamy, and sweet tropical aroma. Combined with the signature crisp popping sensation, it offers an exciting, playful twist that leaves a sweet fruity aftertaste.</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
